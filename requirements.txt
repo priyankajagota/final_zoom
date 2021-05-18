@@ -3,4 +3,4 @@ numpy
 streamlit
 keras
 h5py           
-tensorflow==2.2.0
+tensorflow==2.3.0
