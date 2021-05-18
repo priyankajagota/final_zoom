@@ -14,7 +14,7 @@ import keras
 def foo():
     st.image ("ezgif.com-gif-maker.gif")
          
-    st.write("Welcome to Medic Care Web Application")
+    st.write("Welcome to Medicinal Robot Web Application")
     st.write("It is used to predict the presence of Brain Tumor through MRI images !")
 
 
