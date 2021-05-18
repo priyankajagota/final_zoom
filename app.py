@@ -52,7 +52,7 @@ def bar():
         image = Image.open(uploaded_file)
         st.image(image, caption='Uploaded brain MRI image', use_column_width=True)
         st.write("")
-        st.write("Result........")
+        st.write("Scanning........")
         label = ImageClassificationModel(image, 'my_model_MRI_Jupy.h5')
         if label == 1:
             st.write("Brain tumor is present")
