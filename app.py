@@ -11,6 +11,7 @@ import keras
 import streamlit_theme as stt
 
 stt.set_theme({'primary': '#1b3388'})
+stt.set_theme({'background': 'black'})
 
 
 
