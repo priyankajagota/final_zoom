@@ -9,19 +9,20 @@ from multiapp import MultiApp
 import streamlit as st
 import keras
 import streamlit_theme as stt
-[theme]
 # Primary accent for interactive elements
 primaryColor = '#7792E3'
 # Background color for the main content area
-backgroundColor = '#273346'
+stt.set_theme({'background': '#1b3388'})
+
+#backgroundColor = '#273346'
 # Background color for sidebar and most interactive widgets
-secondaryBackgroundColor = '#B9F1C0'
+#secondaryBackgroundColor = '#B9F1C0'
 # Color used for almost all text
-textColor = '#FFFFFF'
+#textColor = '#FFFFFF'
 # Font family for all text in the app, except code blocks
 # Accepted values (serif | sans serif | monospace) 
 # Default: "sans serif"
-font = "sans serif"
+#font = "sans serif"
 
 
 
