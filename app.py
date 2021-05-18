@@ -103,6 +103,9 @@ def Author():
     st.write("I am extremely excited to share the Medicinal Robot web application with all of you. As we know, Brain Tumors are one of the deadliest diseases. It's important to diagnose it at a very early stage.Magnetic Resonance Imaging (MRI) is the most widely used method to identify brain tumors. With the help of Medicinal Robot, MRI images are analyzed to predict the presence or absence of Brain Tumor. This application has above 95% accuracy. However, before getting to any conclusion, please consult doctors first. You are using this web app at your own risk! ")
     st.write('Best Regards')
     st.write('Priyanka Jagota')
+    st.write('       ')
+    st.write('Email Address : medicinalrobot@gmail.com')
+    
     
 app = MultiApp()
 app.add_app("Welcome Page", foo)
