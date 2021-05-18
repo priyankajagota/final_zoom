@@ -41,6 +41,20 @@ def foo():
          
     st.write("Welcome to Medicinal Robot Web Application")
     st.write("It is used to predict the presence of Brain Tumor through MRI images !")
+    st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: '#1f1f1f'
+    }
+   .sidebar .sidebar-content {
+        background: '#d1d1d1'
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
+  
 
 
 import keras
