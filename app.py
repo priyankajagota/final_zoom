@@ -86,7 +86,7 @@ def ImageClassificationModel(img,model):
     return np.argmax(prediction) # return position of the highest probability
 
 def bar():
-    uploaded_file = st.file_uploader("Please Choose MRI image of brain", type="jpg")
+    uploaded_file = st.file_uploader("Please Choose MRI image of brain",type=["jpg","jpeg"])
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
         st.image(image, caption='Uploaded brain MRI image', use_column_width=True)
