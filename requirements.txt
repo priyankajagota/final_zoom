@@ -1,0 +1,5 @@
+MultiApp
+numpy
+streamlit
+keras
+tensorflow==2.2.0
