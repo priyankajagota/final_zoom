@@ -8,6 +8,9 @@ import streamlit as st
 from multiapp import MultiApp
 import streamlit as st
 import keras
+import streamlit_theme as stt
+
+stt.set_theme({'primary': '#1b3388'})
 
 
 
