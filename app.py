@@ -10,6 +10,7 @@ import streamlit as st
 import keras
 import streamlit_theme as stt
 # Primary accent for interactive elements
+stt.set_theme({'primary': '#7792E3'})
 #primaryColor = '#7792E3'
 # Background color for the main content area
 stt.set_theme({'background': '#1b3388'})
