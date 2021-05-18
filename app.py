@@ -25,7 +25,7 @@ import numpy as np
 
 def ImageClassificationModel(img,model):
     # Step 1
-    model = keras.models.load_model('https://github.com/priyankajagota/final_zoom/blob/main/my_model_MRI_Jupy.h5')
+    model = keras.models.load_model('my_model_MRI_Jupy.h5')
 
     # Step 2
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
@@ -53,7 +53,7 @@ def bar():
         st.image(image, caption='Uploaded brain MRI image', use_column_width=True)
         st.write("")
         st.write("Result........")
-        label = ImageClassificationModel(image, 'https://github.com/priyankajagota/final_zoom/blob/main/my_model_MRI_Jupy.h5')
+        label = ImageClassificationModel(image, 'my_model_MRI_Jupy.h5')
         if label == 1:
             st.write("Brain tumor is present")
         else:
