@@ -1,6 +1,7 @@
 MultiApp
 numpy
 streamlit
+streamlit_theme
 keras
 h5py           
 tensorflow==2.3.0
