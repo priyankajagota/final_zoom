@@ -10,6 +10,19 @@ import streamlit as st
 import keras
 import streamlit_theme as stt
 # Primary accent for interactive elements
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: '#1f1f1f'
+    }
+   .sidebar .sidebar-content {
+        background: '#d1d1d1'
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 #backgroundColor = '#273346'
 # Background color for sidebar and most interactive widgets
