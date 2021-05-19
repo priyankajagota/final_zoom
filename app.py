@@ -11,10 +11,6 @@ import streamlit as st
 from multiapp import MultiApp
 import streamlit as st
 import keras
-import streamlit_theme as stt
-import scipy
-
-stt.set_theme({'primary': '#1b3388'})
 
 def foo():
     st.image ("ezgif.com-gif-maker.gif")
@@ -29,7 +25,7 @@ import keras
 from PIL import Image, ImageOps
 import numpy as np
 #model1=keras.models.save_model('my_model_MRI_jupy.h5','C:\\Users\priya\Documents\Final_Capstone_Files_Updated\archive')
-import cv2
+
 
 
 def ImageClassificationModel(img,model):
