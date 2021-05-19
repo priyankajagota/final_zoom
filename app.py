@@ -16,7 +16,7 @@ def foo():
     st.image ("ezgif.com-gif-maker.gif")
          
     st.write("Welcome to Medic Care Web Application")
-    st.write("It is used to predict the presence of Brain Tumor through MRI images !")
+    st.write("It is used to predict the presence of Brain Tumor and its type by analysing the MRI images !")
 #model1 = keras.models.load_model('my_model_MRI_Jupy_types_of_cancer.h5')
 #img = scipy.ndimage.imread('suza.jpg', mode='RGB')
 
@@ -59,13 +59,15 @@ def bar():
         print(label)
         #.write(label)
         if label == 0:
-            st.write("Brain tumor is not present")
+            st.write("Brain tumor is not present !")
         elif label==1:
-            st.write("Pituitary tumor tumor is  present")
+            st.write("Pituitary tumor is  present")
         elif label==2:
              st.write("Meningioma tumor is  present")
         elif label==3:
             st.write(" Glioma tumor  is  present")
+        else :
+            st.write(" Some other type of tumor  is  present")
             
 def Author():
     st.image ("MEDIC CARE (1).png")
