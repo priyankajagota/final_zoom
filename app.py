@@ -40,7 +40,7 @@ def foo():
     st.image ("ezgif.com-gif-maker.gif")
          
     st.write("Welcome to Medicinal Robot Web Application")
-    st.write("It is used to predict the presence of Pituitary tumor,Meningioma tumor,Glioma tumor and brain Tumors of other types through MRI images !")
+    st.write("It can distinguish the Pituitary tumor, Meningioma tumor, and Glioma tumor. And can also detect the presence or absence of brain tumors of other types through MRI images!")
     st.markdown(
     """
     <style>
