@@ -40,7 +40,7 @@ def foo():
     st.image ("ezgif.com-gif-maker.gif")
          
     st.write("Welcome to Medicinal Robot Web Application")
-    st.write("It is used to predict the presence of Brain Tumor through MRI images !")
+    st.write("It is used to predict the presence of Pituitary tumor,Meningioma tumor,Glioma tumor and brain Tumors of other types through MRI images !")
     st.markdown(
     """
     <style>
@@ -87,7 +87,7 @@ def ImageClassificationModel(img,model):
 
 def bar():
     uploaded_file = st.file_uploader("Please Choose MRI image of brain",type=["jpg","jpeg"])
-    st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
+    #st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
         st.image(image, caption='Uploaded brain MRI image', use_column_width=True)
@@ -116,6 +116,7 @@ def ImageClassificationModel1(img,model):
         return np.argmax(prediction) # return position of the highest probability
 def bar1():
          uploaded_file = st.file_uploader("Please Choose MRI image of brain", type=["jpg","jpeg"])
+         st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
          if uploaded_file is not None:
              image = Image.open(uploaded_file)
              st.image(image, caption='Uploaded brain MRI image', use_column_width=True)
@@ -133,6 +134,7 @@ def bar1():
                     st.write("Meningioma tumor is  present")
              elif label==3:
                    st.write(" Glioma tumor  is  present")
+              
 def Author():
     st.image ("MEDIC CARE.png")
     st.write("Hello everyone !")
