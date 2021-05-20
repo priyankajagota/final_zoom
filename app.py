@@ -76,10 +76,10 @@ def ImageClassificationModel(img,model):
     # Step 3
     image_array = np.asarray(image)
     # Normalize the image
-    normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
+    #normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
 
     # Step 4
-    data[0] = normalized_image_array
+    data[0] =  image_array 
 
     # Step 5
     prediction = model.predict(data)
