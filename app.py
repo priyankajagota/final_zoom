@@ -67,10 +67,10 @@ def ImageClassificationModel(img,model):
     model = keras.models.load_model('actual_my_model_MRI_Jupy_cancer_yes_no.h5')
 
     # Step 2
-    data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+    data = np.ndarray(shape=(1, 150, 150, 3), dtype=np.float32)
     image = img
     #image sizing
-    size = (224, 224)
+    size = (150, 150)
     image = ImageOps.fit(image, size, Image.ANTIALIAS)
 
     # Step 3
