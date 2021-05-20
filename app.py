@@ -16,7 +16,7 @@ import keras
 
 
 #@st.cache(allow_output_mutation=True, max_entries=10, ttl=3600,suppress_st_warning=True)
-@st.cache(suppress_st_warning=True)
+@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=10, ttl=3600)
 def foo():
     st.image ("ezgif.com-gif-maker.gif")
          
@@ -28,7 +28,7 @@ def foo():
 from PIL import Image, ImageOps
 import numpy as np
 
-@st.cache(suppress_st_warning=True)
+#@st.cache(suppress_st_warning=True)
 def ImageClassificationModel(img,model):
     # Step 1
     model = keras.models.load_model('actual_my_model_MRI_Jupy_cancer_yes_no.h5')
@@ -51,7 +51,7 @@ def ImageClassificationModel(img,model):
     # Step 5
     prediction = model.predict(data)
     return np.argmax(prediction) # return position of the highest probability
-@st.cache(suppress_st_warning=True)
+#@st.cache(suppress_st_warning=True)
 def bar():
     #st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
     uploaded_file = st.file_uploader("Please Choose MRI image of brain",type=["jpg","jpeg"])
@@ -65,7 +65,7 @@ def bar():
             st.write("Brain tumor is present")
         else:
             st.write("Brain tumor is not present")
-@st.cache(suppress_st_warning=True)
+#@st.cache(suppress_st_warning=True)
 def ImageClassificationModel1(img,model):
         model = keras.models.load_model('my_model_MRI_Jupy_types_of_cancer.h5')
         data = np.ndarray(shape=(1, 150, 150, 3), dtype=np.float32)
@@ -82,7 +82,7 @@ def ImageClassificationModel1(img,model):
         # Step 5
         prediction = model.predict(data)
         return np.argmax(prediction) # return position of the highest probability
-@st.cache(suppress_st_warning=True)
+#@st.cache(suppress_st_warning=True)
 def bar1():
          st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
          uploaded_file = st.file_uploader("Please Choose MRI image of brain", type=["jpg","jpeg"])
@@ -103,7 +103,7 @@ def bar1():
                     st.write("Meningioma tumor is  present")
              elif label==3:
                    st.write(" Glioma tumor  is  present")
-@st.cache(suppress_st_warning=True)
+#@st.cache(suppress_st_warning=True)
 def Author():
     st.image ("MEDIC CARE.png")
     st.write("Hello everyone !")
