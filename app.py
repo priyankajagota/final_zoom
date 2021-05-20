@@ -76,11 +76,10 @@ def ImageClassificationModel(img,model):
     # Step 3
     image_array = np.asarray(image)
     # Normalize the image
-    #normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
+    normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
 
     # Step 4
-    data[0] =  image_array 
-
+    data[0] =  normalized_image_array
     # Step 5
     prediction = model.predict(data)
     return np.argmax(prediction) # return position of the highest probability
@@ -108,9 +107,9 @@ def ImageClassificationModel1(img,model):
         # Step 3
         image_array = np.asarray(image)
         # Normalize the image
-        Normalize_image = (image_array.astype(np.float32) / 127.0) - 1
+        #Normalize_image = (image_array.astype(np.float32) / 127.0) - 1
         # Step 4
-        data[0] = Normalize_image
+        data[0] = image_array
         # Step 5
         prediction = model.predict(data)
         return np.argmax(prediction) # return position of the highest probability
