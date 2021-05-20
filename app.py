@@ -138,7 +138,7 @@ def bar1():
 def Author():
     st.image ("MEDIC CARE.png")
     st.write("Hello everyone !")
-    st.write("I am extremely excited to share the Medicinal Robot web application with all of you. As we know, Brain Tumors are one of the deadliest diseases. It's important to diagnose it at a very early stage.Magnetic Resonance Imaging (MRI) is the most widely used method to identify brain tumors. With the help of Medicinal Robot, MRI images are analyzed to predict the presence or absence of Brain Tumor. This application has above 95% accuracy. However, before getting to any conclusion, please consult doctors first. You are using this web app at your own risk! ")
+    st.write("I am extremely excited to share the Medicinal Robot web application with all of you. As we know, Brain Tumors are one of the deadliest diseases. It's important to diagnose it at a very early stage.Magnetic Resonance Imaging (MRI) is the most widely used method to identify brain tumors. With the help of Medicinal Robot, MRI images are analyzed to predict the presence or absence of Brain Tumor.It can also distinguish the Pituitary tumor, Meningioma tumor, and Glioma tumor This application has above 95% accuracy. However, before getting to any conclusion, please consult doctors first. You are using this web app at your own risk! ")
     st.write('Best Regards')
     st.write('Priyanka Jagota')
     st.write('       ')
