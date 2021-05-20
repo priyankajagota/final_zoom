@@ -27,7 +27,7 @@ def foo():
 
 from PIL import Image, ImageOps
 import numpy as np
-@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=10, ttl=3600,ignore_hash=True)
+@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=10, ttl=3600)
 #@st.cache(suppress_st_warning=True)
 def ImageClassificationModel(img,model):
     # Step 1
