@@ -43,7 +43,7 @@ def foo():
     st.image ("ezgif.com-gif-maker.gif")
          
     st.write("Welcome to Medicinal Robot Web Application")
-    st.write("It is used to predict the presence of Brain Tumor through MRI images !")
+    st.write("It can distinguish the Pituitary tumor, Meningioma tumor, and Glioma tumor. And can also detect the presence or absence of brain tumors of other types through MRI images! !")
     st.markdown(
     """
     <style>
@@ -127,7 +127,8 @@ def bar1():
              print(label)
              #st.write(label)
              if label == 0:
-                 st.write("Brain tumor is not present")
+                 st.write("Either the Brain tumor is not present or the brain tumor of some other type is present.")
+                 st.write("In order to verify, please click on the Brain Tumor Predictor(in general) web page!")
              elif label==1:
                       st.write("Pituitary tumor tumor is  present")
              elif label==2:
