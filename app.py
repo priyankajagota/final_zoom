@@ -102,7 +102,7 @@ def bar1():
                     st.write("Meningioma tumor is  present")
              elif label==3:
                    st.write(" Glioma tumor  is  present")
-
+st.cache(allow_output_mutation=True, max_entries=10, ttl=3600)
 def Author():
     st.image ("MEDIC CARE.png")
     st.write("Hello everyone !")
