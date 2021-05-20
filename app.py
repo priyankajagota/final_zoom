@@ -116,7 +116,7 @@ def Author():
     st.write('Priyanka Jagota')
     st.write('       ')
     st.write('Email Address : medicinalrobot@gmail.com')
-@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=10, ttl=3600)    
+#@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=10, ttl=3600)    
     
 app = MultiApp()
 app.add_app("Welcome Page", foo)
