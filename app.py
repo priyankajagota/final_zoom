@@ -89,6 +89,7 @@ def ImageClassificationModel(img,model):
     return np.argmax(prediction) # return position of the highest probability
 
 def bar():
+    st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
     uploaded_file = st.file_uploader("Please Choose MRI image of brain",type=["jpg","jpeg"])
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
