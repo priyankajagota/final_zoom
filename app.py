@@ -93,7 +93,7 @@ def bar():
         st.write("")
         st.write("Scanning........")
         label = ImageClassificationModel(image, 'actual_my_model_MRI_Jupy_cancer_yes_no.h5')
-        if label == 1:
+        if label == 0:
             st.write("Brain tumor is present")
         else:
             st.write("Brain tumor is not present !")
