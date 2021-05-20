@@ -11,31 +11,8 @@ import streamlit as st
 from multiapp import MultiApp
 import streamlit as st
 import keras
-import streamlit_theme as stt
-# Primary accent for interactive elements
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: '#1f1f1f'
-    }
-   .sidebar .sidebar-content {
-        background: '#d1d1d1'
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
-#backgroundColor = '#273346'
-# Background color for sidebar and most interactive widgets
-#secondaryBackgroundColor = '#B9F1C0'
-# Color used for almost all text
-#textColor = '#FFFFFF'
-# Font family for all text in the app, except code blocks
-# Accepted values (serif | sans serif | monospace) 
-# Default: "sans serif"
-#font = "sans serif"
+
 
 
 
@@ -44,23 +21,9 @@ def foo():
          
     st.write("Welcome to Medicinal Robot Web Application")
     st.write("It can distinguish the Pituitary tumor, Meningioma tumor, and Glioma tumor. And can also detect the presence or absence of brain tumors of other types through MRI images! !")
-    st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: '#1f1f1f'
-    }
-   .sidebar .sidebar-content {
-        background: '#d1d1d1'
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-    )
   
 
 
-import keras
 from PIL import Image, ImageOps
 import numpy as np
 
