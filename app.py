@@ -124,7 +124,7 @@ def bar1():
              st.write("Result........")
              label = ImageClassificationModel1(image, 'my_model_MRI_Jupy_types_of_cancer.h5')
              print(label)
-             st.write(label)
+             #st.write(label)
              if label == 0:
                  st.write("Either the Brain tumor is not present or the brain tumor of some other type is present.")
                  st.write("In order to verify, please click on the Brain Tumor Predictor(in general) web page!")
