@@ -79,10 +79,10 @@ def ImageClassificationModel(img,model):
     # Step 3
     image_array = np.asarray(image)
     # Normalize the image
-    #normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
+    normalized_image_array = (image_array.astype(np.float32) / 127.0) - 1
 
     # Step 4
-    data[0] = image_array
+    data[0] = normalized_image_array
 
     # Step 5
     prediction = model.predict(data)
@@ -96,7 +96,7 @@ def bar():
         st.write("")
         st.write("Scanning........")
         label = ImageClassificationModel(image, 'actual_my_model_MRI_Jupy_cancer_yes_no.h5')
-        if label == 0:
+        if label == 1:
             st.write("Brain tumor is present")
         else:
             st.write("Brain tumor is not present")
