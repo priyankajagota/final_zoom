@@ -94,9 +94,9 @@ def bar():
         st.write("Scanning........")
         label = ImageClassificationModel(image, 'my_model_MRI_Jupy.h5')
         if label == 1:
-            st.write("Brain tumor is present")
+            st.write("Brain tumor of some other type is present")
         else:
-            st.write("Brain tumor is not present")
+            st.write("Brain tumor is not present !")
 def ImageClassificationModel1(img,model):
         model = keras.models.load_model('my_model_MRI_Jupy_types_of_cancer.h5')
         data = np.ndarray(shape=(1, 150, 150, 3), dtype=np.float32)
@@ -124,7 +124,8 @@ def bar1():
              print(label)
              st.write(label)
              if label == 0:
-                 st.write("Brain tumor is not present")
+                 st.write("Either the Brain tumor is not present or the brain tumor of some other type is present.")
+                 st.write("In order to verify, please click on the Brain Tumor Predictor(in general) web page!)
              elif label==1:
                       st.write("Pituitary tumor tumor is  present")
              elif label==2:
@@ -144,6 +145,6 @@ def Author():
 app = MultiApp()
 app.add_app("Welcome Page", foo)
 app.add_app("Developer's Desk", Author)
-app.add_app("Brain Tumor Predictor", bar)
 app.add_app("Brain Tumor Type Predictor", bar1)
+app.add_app("Brain Tumor Predictor(in general)", bar)
 app.run()
