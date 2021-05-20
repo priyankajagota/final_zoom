@@ -125,7 +125,7 @@ def bar1():
              st.write("Result........")
              label = ImageClassificationModel1(image, 'my_model_MRI_Jupy_types_of_cancer.h5')
              print(label)
-             st.write(label)
+             #st.write(label)
              if label == 0:
                  st.write("Brain tumor is not present")
              elif label==1:
@@ -147,6 +147,6 @@ def Author():
 app = MultiApp()
 app.add_app("Welcome Page", foo)
 app.add_app("Developer's Desk", Author)
-app.add_app("Brain Tumor Predictor", bar)
 app.add_app("Brain Tumor Type Predictor", bar1)
+app.add_app("Brain Tumor Predictor", bar)
 app.run()
