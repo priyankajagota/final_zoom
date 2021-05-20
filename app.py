@@ -87,6 +87,7 @@ def ImageClassificationModel(img,model):
 
 def bar():
     uploaded_file = st.file_uploader("Please Choose MRI image of brain",type=["jpg","jpeg"])
+    st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
         st.image(image, caption='Uploaded brain MRI image', use_column_width=True)
@@ -127,7 +128,7 @@ def bar1():
                  st.write("Either the Brain tumor is not present or the brain tumor of some other type is present.")
                  st.write("In order to verify, please click on the Brain Tumor Predictor(in general) web page!")
              elif label==1:
-                      st.write("Pituitary tumor tumor is  present")
+                      st.write("Pituitary tumor  is  present")
              elif label==2:
                     st.write("Meningioma tumor is  present")
              elif label==3:
