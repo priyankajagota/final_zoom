@@ -6,4 +6,4 @@ keras
 h5py 
 pip install --upgrade tensorflow
 pip install --upgrade tensorflow-gpu
-tensorflow==2.3.0
+
