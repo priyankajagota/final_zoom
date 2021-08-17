@@ -115,8 +115,8 @@ def Author():
     st.write('Email Address : medicinalrobot@gmail.com')
 
 app = MultiApp()
-app.add_app("Welcome Page", foo.app)
-app.add_app("Developer's Desk", Author.app)
-app.add_app("Brain Tumor Type Predictor", bar1.app)
-app.add_app("Brain Tumor Predictor(in general)", bar.app)
+app.add_app("Welcome Page", foo)
+app.add_app("Developer's Desk", Author)
+app.add_app("Brain Tumor Type Predictor", bar1)
+app.add_app("Brain Tumor Predictor(in general)", bar)
 app.run()
