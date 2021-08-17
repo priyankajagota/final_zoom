@@ -45,7 +45,7 @@ class MultiApp:
         })
 
     def run(self):
-        app = st.sidebar.button(
+        app = st.sidebar.radio(
             'Go To',
             self.apps,
             format_func=lambda app: app['title'])
