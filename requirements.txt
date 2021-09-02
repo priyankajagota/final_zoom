@@ -5,4 +5,4 @@ streamlit_theme
 h5py 
 tensorflow==2.4.0
 tensorflow-gpu
-conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+cudatoolkit=10.1 
