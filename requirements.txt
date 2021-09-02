@@ -1,8 +1,5 @@
 MultiApp
 numpy
 streamlit
-streamlit_theme
-h5py 
-tensorflow==2.4.0
-tensorflow-gpu
-cudatoolkit==10.1 
+keras
+tensorflow==2.2.0
