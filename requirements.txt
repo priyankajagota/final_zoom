@@ -1,5 +1,12 @@
-MultiApp
-numpy
-streamlit
-keras
-tensorflow==2.2.0
+jupyterlab==2.1.5
+Keras==2.4.3
+Keras-Preprocessing==1.1.2
+notebook==6.0.3
+numpy==1.19.3
+plot-keras-history==1.1.24
+python-editor==1.0.4
+statsmodels==0.12.2
+streamlit==0.81.1
+tensor==0.3.6
+tensorflow==2.5.0
+MultiApp==1.0
