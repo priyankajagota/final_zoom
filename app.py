@@ -35,7 +35,7 @@ def ImageClassificationModel(img,model):
     image = img
     #image sizing
     size = (150, 150)
-    image = ImageOps.fit(image, size, Image.ANTIALIAS)
+    image = ImageOps.fit(image, size, Image.LANCZOS)
 
     # Step 3
     image_array = np.asarray(image)
@@ -69,7 +69,7 @@ def ImageClassificationModel1(img,model):
         image = img
         #image sizing
         size = (150, 150)
-        image = ImageOps.fit(image, size, Image.ANTIALIAS)
+        image = ImageOps.fit(image, size, Image.LANCZOS)
         # Step 3
         image_array = np.asarray(image)
         # Normalize the image
