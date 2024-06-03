@@ -3,22 +3,20 @@
 
 # -*- coding: utf-8 -*-
 
-
-from tensorflow.keras.models import load_model
-
+# import os
+# os.environ["KERAS_BACKEND"] = "jax"
+import keras
 import streamlit as st
 from multiapp import MultiApp
 import streamlit as st
 from tensorflow import keras 
-
-
-
+from tensorflow.python.keras.models import Sequential, load_model
+# from tensorflow.python.keras.layers import LSTM, Dense
 
 #@st.cache(allow_output_mutation=True, max_entries=100, ttl=10800,suppress_st_warning=True)
 
 def foo():
     st.image ("ezgif.com-gif-maker.gif")
-         
     st.write("Welcome to Medicinal Robot Web Application")
     st.write("It can distinguish the Pituitary tumor, Meningioma tumor, and Glioma tumor. And can also detect the presence or absence of brain tumors of other types through MRI images! !")
   
@@ -54,7 +52,7 @@ def bar():
     #st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
     uploaded_file = st.file_uploader("Please Choose MRI image of brain",type=["jpg","jpeg"])
     if uploaded_file is not None:
-        image = Image.open(uploaded_file)
+        image = Image.open(uploaded_file).convert('RGB')
         st.image(image, caption='Uploaded brain MRI image', use_column_width=True)
         st.write("")
         st.write("Scanning........")
@@ -87,7 +85,7 @@ def bar1():
          st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
          uploaded_file = st.file_uploader("Please Choose MRI image of brain", type=["jpg","jpeg"])
          if uploaded_file is not None:
-             image = Image.open(uploaded_file)
+             image = Image.open(uploaded_file).convert('RGB')
              st.image(image, caption='Uploaded brain MRI image', use_column_width=True)
              st.write("")
              st.write("Result........")
