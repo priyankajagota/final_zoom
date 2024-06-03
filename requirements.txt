@@ -3,7 +3,8 @@ Keras==2.4.3
 Keras-Preprocessing==1.1.2
 notebook
 Pillow==9.5.0
-numpy==1.26.4
+numpy==1.16.2
+pandas==1.0.3
 plot-keras-history==1.1.24
 python-editor==1.0.4
 statsmodels==0.12.2
