@@ -1,11 +1,11 @@
-tensorflow==2.12.0
+tensorflow
 protobuf<=3.20.1
 jupyterlab
 keras
 Keras-Preprocessing
 notebook
 Pillow
-numpy
+numpy==1.21.6
 pandas
 plot-keras-history
 python-editor
