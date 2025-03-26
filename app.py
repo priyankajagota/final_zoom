@@ -62,26 +62,26 @@ import numpy as np
 #             st.write("Brain tumor is present")
 #         else:
 #             st.write("Brain tumor is not present")
-# #@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=100, ttl=10800)
+# @st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=100, ttl=10800)
 
-# def ImageClassificationModel1(img,model):
-#         model = keras.models.load_model('my_model_MRI_Jupy_types_of_cancer.h5')
-#         data = np.ndarray(shape=(1, 150, 150, 3), dtype=np.float32)
-#         image = img
-#         #image sizing
-#         size = (150, 150)
-#         image = ImageOps.fit(image, size, Image.LANCZOS)
-#         # Step 3
-#         image_array = np.asarray(image)
-#         # Normalize the image
-#         #Normalize_image = (image_array.astype(np.float32) / 127.0) - 1
-#         # Step 4
-#         data[0] = image_array
-#         # Step 5
-#         prediction = model.predict(data)
-#         return np.argmax(prediction) # return position of the highest probability
+def ImageClassificationModel1(img,model):
+        model = keras.models.load_model('my_model_MRI_Jupy_types_of_cancer.h5')
+        data = np.ndarray(shape=(1, 150, 150, 3), dtype=np.float32)
+        image = img
+        #image sizing
+        size = (150, 150)
+        image = ImageOps.fit(image, size, Image.LANCZOS)
+        # Step 3
+        image_array = np.asarray(image)
+        # Normalize the image
+        #Normalize_image = (image_array.astype(np.float32) / 127.0) - 1
+        # Step 4
+        data[0] = image_array
+        # Step 5
+        prediction = model.predict(data)
+        return np.argmax(prediction) # return position of the highest probability
 
-# #@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=100, ttl=10800)
+#@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=100, ttl=10800)
 # def bar1():
 #             # Dashboard Main Panel
 #             # Dashboard Main Panel
@@ -121,7 +121,7 @@ import numpy as np
 #                  - :red[**How to Use**]: Upload the MRI scan of brain in either JPG or JPEG format. 
 #                  ''')
           
-# #@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=100, ttl=10800)
+#@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=100, ttl=10800)
 
 # def Author():
 #     st.image ("MEDIC CARE.png")
