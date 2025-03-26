@@ -83,7 +83,10 @@ def ImageClassificationModel1(img,model):
 
 #@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=100, ttl=10800)
 def bar1():
-         # Dashboard Main Panel
+            # Dashboard Main Panel
+            # Dashboard Main Panel
+            col = st.columns((1.5, 4.5, 2), gap='medium')
+    with col[1]:
             st.markdown('##### BRAIN TUMOR PREDICTOR')
             uploaded_file = st.file_uploader("Upload MRI image of Brain", type=["jpg","jpeg"])
       
@@ -103,7 +106,8 @@ def bar1():
                    st.write("Meningioma tumor is  present")
                elif label==3:
                    st.write(" Glioma tumor  is  present")
-           with st.expander('About', expanded=True):
+     with col[2]:
+            with st.expander('About', expanded=True):
                 st.write('''
                  - Devolper Desk: Brain Tumors are one of the deadliest diseases. It's important to diagnose it at a very early stage.Magnetic Resonance Imaging (MRI) is the most widely used method to identify brain tumors. With the help of Medicinal Robot, MRI images are analyzed to predict the presence or absence of Brain Tumor. This application has above 95% accuracy. However, before getting to any conclusion, please consult doctors first. You are using this web app at your own risk!
                  - :red[**Problem Statement**]: It can distinguish among Pituitary tumor, Meningioma tumor, and Glioma tumor.
