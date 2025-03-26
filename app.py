@@ -142,17 +142,17 @@ import numpy as np
 # Page configuration
 st.set_page_config(
     page_title="Brain Tumor Detector",
-    page_icon="🚗",
+    page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded")
 
-
+st.markdown('#### 🧠 BRAIN TUMOR DETECTOR')
 
 with st.container(border=True):
             # tile = col.container(height=120)
             # tile.title(":balloon:")
   
-            st.markdown('##### BRAIN TUMOR PREDICTOR')
+            # st.markdown('##### BRAIN TUMOR PREDICTOR')
             uploaded_file = st.file_uploader("Upload MRI image of Brain", type=["jpg","jpeg"])
       
             if uploaded_file is not None:
