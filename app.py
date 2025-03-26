@@ -10,7 +10,8 @@ import streamlit as st
 from multiapp import MultiApp
 import streamlit as st
 from tensorflow import keras 
-from tensorflow.python.keras.models import Sequential, load_model
+#from tensorflow.python.keras.models import Sequential, load_model
+from tensorflow.keras.models import load_model, Sequential
 # from tensorflow.python.keras.layers import LSTM, Dense
 
 #@st.cache(allow_output_mutation=True, max_entries=100, ttl=10800,suppress_st_warning=True)
