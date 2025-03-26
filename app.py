@@ -159,19 +159,19 @@ with st.container(border=True):
                image = Image.open(uploaded_file).convert('RGB')
                st.image(image, caption='Uploaded brain MRI image', use_container_width=True)
                st.write("")
-               st.write("Result........")
+               st.write("Result")
                label = ImageClassificationModel1(image, 'my_model_MRI_Jupy_types_of_cancer.h5')
                print(label)
                with st.container(border=True):
                     if label == 0:
-                       st.write("Either the Brain tumor is not present or the brain tumor of some other type is present.")
+                       st.write("Either the Brain tumor is not present or the brain tumor of some other type can be present.")
                        st.write("In order to verify, please click on the Brain Tumor Predictor(in general) web page!")
                     elif label==1:
                        st.write("Pituitary tumor tumor is  present")
                     elif label==2:
                        st.write("Meningioma tumor is  present")
                     elif label==3:
-                       st.write(" Glioma tumor  is  present")
+                       st.write("Glioma tumor is present")
 with st.container(border=True):
                with st.expander('About', expanded=True):
                     st.write('''
