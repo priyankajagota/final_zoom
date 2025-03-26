@@ -86,11 +86,11 @@ def bar1():
             # Dashboard Main Panel
             # Dashboard Main Panel
     # col = st.columns((1.5, 4.5, 2), gap='medium', vertical_alignment="Top", border=True)
-    row1 = st.columns(1)
-    row2 = st.columns(1)
+    # row1 = st.columns(1)
+    # row2 = st.columns(1)
 
-   for col in row1:
-            tile = col.container(height=120)
+   with st.container(border=True):
+            # tile = col.container(height=120)
             # tile.title(":balloon:")
   
             st.markdown('##### BRAIN TUMOR PREDICTOR')
@@ -112,7 +112,7 @@ def bar1():
                    st.write("Meningioma tumor is  present")
                elif label==3:
                    st.write(" Glioma tumor  is  present")
-    for col in row2:
+   with st.container(border=True):
                with st.expander('About', expanded=True):
                     st.write('''
                  - :red[**Developer Desk**]: Brain Tumors are one of the deadliest diseases. It's important to diagnose it at a very early stage.Magnetic Resonance Imaging (MRI) is the most widely used method to identify brain tumors. With the help of Medicinal Robot, MRI images are analyzed to predict the presence or absence of Brain Tumor. This application has above 95% accuracy. However, before getting to any conclusion, please consult doctors first. You are using this web app at your own risk!
