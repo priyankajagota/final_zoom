@@ -90,7 +90,7 @@ def bar1():
             uploaded_file = st.file_uploader("Please Choose MRI image of brain", type=["jpg","jpeg"])
         
            # st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
-        with col[2]:
+          with col[2]:
            if uploaded_file is not None:
               image = Image.open(uploaded_file).convert('RGB')
               st.image(image, caption='Uploaded brain MRI image', use_container_width=True)
