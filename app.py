@@ -85,6 +85,12 @@ def ImageClassificationModel1(img,model):
 def bar1():
          st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
          uploaded_file = st.file_uploader("Please Choose MRI image of brain", type=["jpg","jpeg"])
+         with st.expander('About', expanded=True):
+                 st.write('''
+                 - Data: [U.S. Census Bureau](https://www.census.gov/data/datasets/time-series/demo/popest/2010s-state-total.html).
+                 - :orange[**Gains/Losses**]: states with high inbound/ outbound migration for selected year
+                 - :orange[**States Migration**]: percentage of states with annual inbound/ outbound migration > 50,000
+                 ''')
          if uploaded_file is not None:
              image = Image.open(uploaded_file).convert('RGB')
              st.image(image, caption='Uploaded brain MRI image', use_container_width=True)
@@ -102,12 +108,7 @@ def bar1():
                     st.write("Meningioma tumor is  present")
              elif label==3:
                    st.write(" Glioma tumor  is  present")
-           with st.expander('About', expanded=True):
-                 st.write('''
-            - Data: [U.S. Census Bureau](https://www.census.gov/data/datasets/time-series/demo/popest/2010s-state-total.html).
-            - :orange[**Gains/Losses**]: states with high inbound/ outbound migration for selected year
-            - :orange[**States Migration**]: percentage of states with annual inbound/ outbound migration > 50,000
-             ''')
+          
 #@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=100, ttl=10800)
 
 def Author():
