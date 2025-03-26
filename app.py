@@ -85,7 +85,7 @@ def ImageClassificationModel1(img,model):
 def bar1():
             # Dashboard Main Panel
             # Dashboard Main Panel
-            col = st.columns((1.5, 4.5, 2), gap='medium')
+    col = st.columns((1.5, 4.5, 2), gap='medium')
     with col[1]:
             st.markdown('##### BRAIN TUMOR PREDICTOR')
             uploaded_file = st.file_uploader("Upload MRI image of Brain", type=["jpg","jpeg"])
