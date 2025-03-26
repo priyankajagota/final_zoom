@@ -54,7 +54,7 @@ def bar():
     uploaded_file = st.file_uploader("Please Choose MRI image of brain",type=["jpg","jpeg"])
     if uploaded_file is not None:
         image = Image.open(uploaded_file).convert('RGB')
-        st.image(image, caption='Uploaded brain MRI image', use_column_width=True)
+        st.image(image, caption='Uploaded brain MRI image', use_container_width=True)
         st.write("")
         st.write("Scanning........")
         label = ImageClassificationModel(image, 'actual_my_model_MRI_Jupy_cancer_yes_no.h5')
@@ -87,7 +87,7 @@ def bar1():
          uploaded_file = st.file_uploader("Please Choose MRI image of brain", type=["jpg","jpeg"])
          if uploaded_file is not None:
              image = Image.open(uploaded_file).convert('RGB')
-             st.image(image, caption='Uploaded brain MRI image', use_column_width=True)
+             st.image(image, caption='Uploaded brain MRI image', use_container_width=True)
              st.write("")
              st.write("Result........")
              label = ImageClassificationModel1(image, 'my_model_MRI_Jupy_types_of_cancer.h5')
