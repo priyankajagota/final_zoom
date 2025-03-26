@@ -13,4 +13,4 @@ statsmodels
 streamlit
 tensor
 tensorflow
-MultiApp
+
