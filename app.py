@@ -7,7 +7,7 @@
 # os.environ["KERAS_BACKEND"] = "jax"
 import keras
 import streamlit as st
-from multiapp import MultiApp
+# from multiapp import MultiApp
 import streamlit as st
 from tensorflow import keras 
 #from tensorflow.python.keras.models import Sequential, load_model
@@ -138,6 +138,16 @@ import numpy as np
 # app.add_app("Brain Tumor Type Predictor", bar1)
 # app.add_app("Brain Tumor Predictor(in general)", bar)
 # app.run()
+#######################
+# Page configuration
+st.set_page_config(
+    page_title="Brain Tumor Detector",
+    page_icon="🚗",
+    layout="wide",
+    initial_sidebar_state="expanded")
+
+alt.themes.enable("dark")
+
 
 with st.container(border=True):
             # tile = col.container(height=120)
