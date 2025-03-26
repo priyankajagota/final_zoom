@@ -6,7 +6,7 @@ keras
 Keras-Preprocessing
 notebook
 Pillow
-numpy
+numpy>= 1.22
 pandas
 plot-keras-history
 python-editor
