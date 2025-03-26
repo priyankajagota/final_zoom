@@ -102,6 +102,12 @@ def bar1():
                     st.write("Meningioma tumor is  present")
              elif label==3:
                    st.write(" Glioma tumor  is  present")
+           with st.expander('About', expanded=True):
+                 st.write('''
+            - Data: [U.S. Census Bureau](https://www.census.gov/data/datasets/time-series/demo/popest/2010s-state-total.html).
+            - :orange[**Gains/Losses**]: states with high inbound/ outbound migration for selected year
+            - :orange[**States Migration**]: percentage of states with annual inbound/ outbound migration > 50,000
+             ''')
 #@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=100, ttl=10800)
 
 def Author():
