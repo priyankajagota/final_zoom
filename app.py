@@ -157,7 +157,8 @@ with st.container(border=True):
       
             if uploaded_file is not None:
                image = Image.open(uploaded_file).convert('RGB')
-               st.image(image, caption='Uploaded brain MRI image', use_container_width=True)
+               st.image(image, caption='Uploaded brain MRI image', width= 100)
+               # st.image(image, caption='Uploaded brain MRI image', use_container_width=True)
                st.write("")
                st.write("Result")
                label = ImageClassificationModel1(image, 'my_model_MRI_Jupy_types_of_cancer.h5')
