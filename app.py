@@ -166,7 +166,6 @@ with st.container(border=True):
                with st.container(border=True):
                     if label == 0:
                        st.write("Either the Brain tumor is not present or the brain tumor of some other type can be present.")
-                       st.write("In order to verify, please click on the Brain Tumor Predictor(in general) web page!")
                     elif label==1:
                        st.write("Pituitary tumor tumor is  present")
                     elif label==2:
