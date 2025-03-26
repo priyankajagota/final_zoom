@@ -85,12 +85,10 @@ def ImageClassificationModel1(img,model):
 def bar1():
          # Dashboard Main Panel
          col = st.columns((1.5, 4.5, 2), gap='medium')
-       
-         uploaded_file = st.file_uploader("Please Choose MRI image of brain", type=["jpg","jpeg"])
-        
-
-        with col[1]:
+         with col[1]:
             st.markdown('#### BRAIN TUMOR PREDICTOR')
+            uploaded_file = st.file_uploader("Please Choose MRI image of brain", type=["jpg","jpeg"])
+        
            # st.write(' It will predict the presence of Pituitary tumor, Meningioma tumor and Glioma tumors in the brain')
         with col[2]:
            if uploaded_file is not None:
