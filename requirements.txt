@@ -1,7 +1,7 @@
-tensorflow
+tensorflow==2.15.0
+keras==2.15.0
 protobuf
 jupyterlab
-keras
 Keras-Preprocessing
 notebook
 Pillow
