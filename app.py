@@ -106,9 +106,9 @@ def bar1():
                    st.write("Meningioma tumor is  present")
                elif label==3:
                    st.write(" Glioma tumor  is  present")
-     with col[2]:
-            with st.expander('About', expanded=True):
-                st.write('''
+    with col[2]:
+               with st.expander('About', expanded=True):
+                    st.write('''
                  - Devolper Desk: Brain Tumors are one of the deadliest diseases. It's important to diagnose it at a very early stage.Magnetic Resonance Imaging (MRI) is the most widely used method to identify brain tumors. With the help of Medicinal Robot, MRI images are analyzed to predict the presence or absence of Brain Tumor. This application has above 95% accuracy. However, before getting to any conclusion, please consult doctors first. You are using this web app at your own risk!
                  - :red[**Problem Statement**]: It can distinguish among Pituitary tumor, Meningioma tumor, and Glioma tumor.
                  - :red[**How to Use**]: Upload the MRI scan of brain in either JPG or JPEG format. 
