@@ -84,8 +84,8 @@ def ImageClassificationModel1(img,model):
 #@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=100, ttl=10800)
 def bar1():
          # Dashboard Main Panel
-            st.markdown('#### BRAIN TUMOR PREDICTOR')
-            uploaded_file = st.file_uploader("Please Choose MRI image of brain", type=["jpg","jpeg"])
+            st.markdown('##### BRAIN TUMOR PREDICTOR')
+            uploaded_file = st.file_uploader("Upload MRI image of Brain", type=["jpg","jpeg"])
       
             if uploaded_file is not None:
                image = Image.open(uploaded_file).convert('RGB')
@@ -103,12 +103,12 @@ def bar1():
                    st.write("Meningioma tumor is  present")
                elif label==3:
                    st.write(" Glioma tumor  is  present")
-          # with st.expander('About', expanded=True):
-          #      st.write('''
-          #        - Devolper Desk: Brain Tumors are one of the deadliest diseases. It's important to diagnose it at a very early stage.Magnetic Resonance Imaging (MRI) is the most widely used method to identify brain tumors. With the help of Medicinal Robot, MRI images are analyzed to predict the presence or absence of Brain Tumor. This application has above 95% accuracy. However, before getting to any conclusion, please consult doctors first. You are using this web app at your own risk!
-          #        - :red[**Problem Statement**]: It can distinguish among Pituitary tumor, Meningioma tumor, and Glioma tumor.
-          #        - :red[**How to Use**]: Upload the MRI scan of brain in either JPG or JPEG format. 
-          #        ''')
+           with st.expander('About', expanded=True):
+                st.write('''
+                 - Devolper Desk: Brain Tumors are one of the deadliest diseases. It's important to diagnose it at a very early stage.Magnetic Resonance Imaging (MRI) is the most widely used method to identify brain tumors. With the help of Medicinal Robot, MRI images are analyzed to predict the presence or absence of Brain Tumor. This application has above 95% accuracy. However, before getting to any conclusion, please consult doctors first. You are using this web app at your own risk!
+                 - :red[**Problem Statement**]: It can distinguish among Pituitary tumor, Meningioma tumor, and Glioma tumor.
+                 - :red[**How to Use**]: Upload the MRI scan of brain in either JPG or JPEG format. 
+                 ''')
           
 #@st.cache(suppress_st_warning=True,allow_output_mutation=True, max_entries=100, ttl=10800)
 
