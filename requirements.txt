@@ -1,11 +1,11 @@
 tensorflow==2.10.0
-protobuf<=3.20.1
+protobuf
 jupyterlab
 keras
 Keras-Preprocessing
 notebook
 Pillow
-numpy>= 1.22
+numpy
 pandas
 plot-keras-history
 python-editor
